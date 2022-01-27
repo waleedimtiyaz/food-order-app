@@ -5,33 +5,34 @@ import CakeItem from "./CakeItem/CakeItem";
 const DUMMY_CAKES = [
   {
     id: "c1",
-    name: "Sushi",
-    description: "Finest fish and veggies",
-    price: 22.99,
+    name: "Pineapple Cake",
+    description: "Finest pineapple and cream",
+    price: 299,
   },
   {
     id: "c2",
-    name: "Schnitzel",
-    description: "A german specialty!",
-    price: 16.5,
+    name: "Black Forest",
+    description: "A chocolate delicacy!",
+    price: 49.99,
   },
   {
     id: "c3",
-    name: "Barbecue Burger",
-    description: "American, raw, meaty",
-    price: 12.99,
+    name: "White Forest",
+    description: "Vanilla flavoured chips",
+    price: 39.99,
   },
   {
     id: "c4",
-    name: "Green Bowl",
-    description: "Healthy...and green...",
-    price: 18.99,
+    name: "Strawberry Cake",
+    description: "Healthy, super sweet....",
+    price: 499.99,
   },
 ];
 
 const AvailableCakes = () => {
   const cakesList = DUMMY_CAKES.map((cake) => (
     <CakeItem
+      id={cake.id}
       name={cake.name}
       description={cake.description}
       price={cake.price}
